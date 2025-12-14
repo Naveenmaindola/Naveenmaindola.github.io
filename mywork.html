@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Work</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="mywork-page">
+
+<!-- Background video -->
+<video autoplay muted loop playsinline preload="metadata" class="fullpage-video">
+  <source src="assets/anims/rosslers.mp4" type="video/mp4">
+</video>
+
+<div class="fullpage-overlay"></div>
+
+<header class="pub-header-simple">
+  <h1>My Work</h1>
+  <p>Ideas, projects, and explorations beyond formal publications</p>
+</header>
+
+<nav class="glass-nav">
+  <div class="nav-content">
+    <a href="index.html">Home</a>
+    <a href="mywork.html">My Work</a>
+    <a href="publications.html">Publications</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Intro -->
+  <section>
+    <h1>Overview</h1>
+    <p>
+      I love learning and experimenting with current literature in complex systems and Computational neuroscience. 
+      This page collects ideas and projects I work on alongside my PhD research.
+      Some of these are exploratory, some are ongoing, and some may never become
+      formal publications. They represent questions that currently intrigue me
+      and directions I would like to explore further.
+    </p>
+  </section>
+
+  <!-- Section: Current Explorations -->
+  <section style="margin-top:2rem;">
+    <h1>Work during PhD</h1>
+
+    <div class="work-item">
+
+      <h2>Interplay of Asymmetric and symmetric couplings</h2>
+      <p class="work-meta">Status: ongoing · theory & numerics</p>
+
+      <div class="work-media">
+        <div class="media-strip">
+          <video muted autoplay loop playsinline>
+            <source src="assets/anims/standing-ACC.mp4" type="video/mp4">
+          </video>
+          <img src="assets/figures/ACC-time.jpg">
+          <img src="assets/figures/ACC-trans.jpg">
+        </div>
+      </div>
+
+      <p>
+        In our work with asymmetrically coupled oscillators, we observed an special dynamical states of oscillators,
+         which arrive due to somewhat unexplored territory of bifurcations. This work is in continuation of the work 
+         described in the next section. There, we are exploring the effects of asymmetric amplitude coupling of Stuart-Landau oscillators.
+         Due to the overwhelming phase coupling, system takes phase locked states (either splay or completey sync.).
+         But, while this asymmetric coupling has its impact, we observe a strange phenomenon, which we call an 'Asymmetric Coherent Cluster (ACC)'.
+         <br>
+         When Sync. state is stable, all the oscillators go along the original limit cycle with same frequencies and amplitudes. But, as the asymmetric coupling
+         varies, the synchronized state becomes unstable and another closed trajectory appears. We have evidence that these state are born due to another supercritical hopf bifurcation of CS states. 
+         <strong>And, this is the most interesting part.</strong> <br>
+         While the original limit cycle exists, this other closed trajectory makes the oscillators move in a non-trivial path, though the cluster still maintains its rotation in the original limit cycle.
+         Currently, we are exploring the properties of these ACC states. 
+         Hopefully, we will submit the work soon.
+
+         
+      </p>
+
+    </div>
+
+    <div class="work-item">
+
+      <h2>Interplay of Asymmetric and symmetric couplings on network of oscillators:
+          Emergence of symmetric phase locked (splay states) and phase drift (Asymmetric coherent clustered) states</h2>
+      <p class="work-meta">Status: Published · <a href="https://doi.org/10.1103/PhysRevE.111.054218" target="_blank">See article</a>.</p>
+
+      <div class="work-media">
+        <div class="media-strip">
+          <video muted autoplay loop playsinline>
+            <source src="assets/anims/PRE_anim.mp4" type="video/mp4">
+          </video>
+          <img src="assets/figures/schematic.jpg">
+        </div>
+      </div>
+
+      <p>
+        Here, we explored the effects of asymmetric (asymmetry in amplitude eqs.) and symmetric (symmetry in phase eqs.) couplings on a network of 'N' identical Ginzburg-Landau
+        oscillators. For all attracting couplings, the complete synchrony wins and the system synchronizes (CS state). 
+        When symmetric coupling (&gamma;) is repelling, it dominates over the asymmetric coupling (&epsilon;), and, multistable splay states appear (SP).
+        We theoretically figured out the amplitudes and frequencies of the system in all phase locked states for any 'N'.
+        Most interesting and non-trivial dynamics appears when both couplings compete. An 'Asymmetric Coherent Cluster (ACC)' appear (TW state in animation).
+        Please see the above section for somewhat more details. <br>
+        The ACC states are especially interesting because each oscillators possesses different amplitude and frequency 
+        instentaneously, more like <a href="https://www.nature.com/articles/srep36713" target="_blank">Bellerophon states</a>, but not quite like it. 
+        Because, over large t, each oscillator is identical, having identical amplitudes and frequencies.
+      </p>
+
+    </div>
+
+    <div class="work-item">
+
+      <h2>Rotation-flip in coupled oscillators</h2>
+      <p class="work-meta">Status: Published · <a href="https://doi.org/10.1016/j.chaos.2024.114588" target="_blank">See ariticle</a></p>
+
+      <div class="work-media">
+        <div class="media-strip">
+          <!-- <video muted autoplay loop playsinline>
+            <source src="assets/anims/PRE_anim.mp4" type="video/mp4">
+          </video> -->
+          <img src="assets/figures/vs-K.png">
+          <img src="assets/figures/bipartite.jpg">
+          <img src="assets/figures/GC.jpg">
+        </div>
+      </div>
+
+      <p>
+        Recent investigations <a href="https://www.nature.com/articles/s41586-021-03682-1">[1]</a> into hydrodynamic spin lattice (HSL) have revealed intriguing connections
+         between the various phenomenon of magnetism and emergent phenomena of synchronization.
+         Through experiments manipulating lattice configurations and rotational forces, the authors have made notable observations in HSL: 
+         (i) anti-ferromagnetic order, where droplets rotate opposite to their nearest neighbours;
+         (ii) ferromagnetic order, where droplets rotate in sync with neighbours; 
+         (iii) phase transitions from anti-ferromagnetic to ferromagnetic order; and 
+         (iv) <strong>spin-flips</strong>. <br>
+        While reading <a href="https://www.nature.com/articles/s41586-021-03682-1">[1]</a> and <a href="https://www.pnas.org/doi/10.1073/pnas.2024299118">[2]</a>
+        We figured that, such system can be mimicked with limit cycles (Stuart Landau oscillators) on a network. The rotating droplets assert force on its neighbouring droplets
+        according to its position on the circular path. This acts like amplitude dependent frequency in Stuart-Landau oscillators. <br>
+        Exploring the problem from this perspective becomes more fundamental in the field of complex systems due to the normal form limit cycles. In our work, We discovered a new
+         emergent phenomenon, ‘explosive synchronization via rotation flips’. 
+         We have also seen the rotation flips operating in both continous and explosive synchronization in Kuramoto oscillators regardless of the network architecture. 
+         In our upcoming work, we will provide the detailed results with theoretical predictions of the frequency branch in all cases. Hopefully, we will submit the work soon.
+         
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- Section: Side Projects -->
+  <section id="otherprojects" style="margin-top:2rem;">
+    <h1>Other Projects & Ideas</h1>
+
+    <div class="work-item">
+      <h2>Oscillatory firing and Global range effect on Spatio 
+        Temporal Activity Sequence in Perlin-like Networks</h2>
+      <p class="work-meta">Status: exploratory</p>
+      <div class="work-media">
+        <div class="media-strip">
+          <video muted autoplay loop playsinline>
+            <source src="assets/anims/EE_K=8.0.mp4" type="video/mp4">
+          </video>
+          <video muted autoplay loop playsinline>
+            <source src="assets/anims/EE_K=2.0.mp4" type="video/mp4">
+          </video>
+
+        </div>
+      </div>
+      <p>
+        Due to the geometric shape of a neuron, neurons have preferential connections along its axon. This is what I imagined and later learned from 
+        literature and youtube. This section is about my attempts to create a such a preferential network on a 2D grid. (This is before I learned about Perlin noise and network from 
+        this very intersting work by <a href="https://doi.org/10.1371/journal.pcbi.1013637" target="_blank">Spreizer S et. al., PLoS, 2025</a>).
+        My naive attempt was inspired from the algorithm used in FPP shooting games. First, I made a MxN 2D grid of Izhikevich neurons.
+        To connect the neurons, I chose a random direction, and created a cone from j<sup>th</sup> neuron with a random radius between (R-dR) &#60 R &#60 (R+dR).
+        Within this radius, I find the enclosed nodes and connect them randomly. That's pretty much it. Then, I applied different dynamics of Izhekevich neurons 
+        suggested in <a href="https://ieeexplore.ieee.org/document/1257420" target="_blank">Izhikevich, IEEE Transactions on Neural Networks (2003)</a>. 
+        Mainly, I took regularly firing, and chattering dynamics for individual neurons (with identical coupling strengths). 
+        There were some interesting results I got. Please take a look at the gallery.
+      </p>
+    </div>
+
+    <div class="work-item">
+      <h2>Focal demyelination in Hodgkin-Huxley neuron</h2>
+      <p class="work-meta">Status: exploratory</p>
+      <div class="work-media">
+        <div class="media-strip">
+          <img src="assets/figures/type=chimeric-go.png">
+          <img src="assets/figures/type=chimeric-nogo.png">
+          <img src="assets/figures/type=bell-go.png">
+          <img src="assets/figures/type=bell_nogo.png">
+        </div>
+      </div>
+      <p>
+        Demyelination is the loss of myelin sheath around the axon of a neuron, which prevents the synapse to travel along. This is loss of communication around the neuronal network (CNS or PNS)
+        which results in paralysis (slowly progressive or rapid). It usually occurs due to an autoimmune disease such as multiple sclerosis and guillain barré syndrome, where, body's immune system mistakes the myelin as 
+        a foreign entity. <br>
+        This was a project I decided for myself while learning <a href="https://nrn.readthedocs.io/en/8.2.4/hoc/programming/hoc.html" target="_blank">NEURON HOC</a> for modelling morphologically sound neuron. 
+        I found some articles describing how one can go about modelling the demylination in neurons. One of them and which I personally loved was 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/4675037/" target="_blank">Z J Koles, M Rasminsky, J Physiol. 1972</a>. Therefore, I modelled a Hodgkin-Huxley neuron (Large squid axon) in HOC
+        (with 700 nodes), and experimented with patterns of demylinations by manipulating the membrane capacitance (C<sub>m</sub>) values along the axon. <br>
+        I wondered what could be the most natural pattern of demyelination:
+        (i) Uniformally random throughout, 
+        (ii) Nonlinearly demyelinating around the middle of axon, 
+        (iii) less demyelinated near the soma and dendrite and more around the middle. (Found this more realistic)
+        Along the internodes, I varied the C<sub>m</sub> values from 0.01 mF/cm<sup>2</sup> (myelinated) to &sigma; (1 mF/cm<sup>2</sup> being completely demyelinated). I call &sigma; to be the severity of demeylination. 
+        Then, I found the critical value of &sigma;, which deosn't allow the potential to get through. Please late a look at the gallery, plots in the bbottom are the 'Cm' values.
+
+      </p>
+    </div>
+  </section>
+
+  <!-- Section: Notes -->
+  <section style="margin-top:2rem;">
+    <h2>Chimera states in nonlocally coupled Kuramoto oscillators with contrarians</h2>
+    <p class="work-meta">Status: exploratory</p>
+    <div class="work-media">
+        <div class="media-strip">
+          <img src="assets/figures/two-clus-chimera.jpg">
+          <img src="assets/figures/one-clus-chimera.jpg">
+        </div>
+      </div>
+    <p>
+      Here, I am exploring the fate of chimera states in nonlocally coupled Kuramoto oscillators when the contrarians are present in the system.
+      Following the article <a href="https://doi.org/10.1103/PhysRevLett.93.174102">Daniel M. Abrams and Steven H. Strogatz (2004)</a>, they took a nonlocal ring of oscillators 
+      where the coupling strength between the nodes decreases with distance (&lambda;e<sup>-ax</sup>). 
+      I made some modifications in the kernel ( &lambda;[(1+b<sub>-</sub>)e<sup>-ax</sup> - b<sub>-</sub>] ) so that connected nodes can made negatively coupled 
+      to the j<sup>th</sup> node. This introduces inhibition in the system. <br>
+      Preliminary results suggest that two cluster chimera states appear if enough contrarians are present. I will update the work here soon.
+    </p>
+  </section>
+
+
+</div>
+
+<p style="opacity:0.8; font-size:0.9rem;">
+  Last updated: 2025
+</p>
+
+
+<footer>
+  © 2025 Naveen Mendola
+</footer>
+
+</body>
+</html>
